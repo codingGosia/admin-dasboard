@@ -6,18 +6,18 @@
 }
 body {
   min-height: 100vh;
-  background: #365fa1;
+  background: #783597;
 }
 .navigation {
   position: fixed;
   inset: 20px;
   width: 80px;
-  width: 300px;
-  background: #287bff;
-  border-left: 10px solid #287bff;
+  background: #b434ae;
+  border-left: 10px solid #9630d1;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 15px 15px 25px rgba(0,0,0,0.05) ;
+  box-shadow: 15px 15px 25px rgba(0,0,0,0.05);
+  transition: 0.5s;
  }
  .toggle {
   position: absolute;
@@ -39,7 +39,7 @@ body {
   width: 26px;
   height: 3px;
   border-radius: 3px;
-  background: #365fa1;
+  background: #d552f0;
   transform: translateY(-5px);
   transition: 1s;
  }
@@ -49,7 +49,7 @@ body {
   width: 26px;
   height: 3px;
   border-radius: 3px;
-  background: #365fa1;
+  background: #d552f0;
   transform: translateY(5px);
   transition: 1s;
  }
@@ -111,7 +111,7 @@ body {
   color: #fff;
  }
  .navigation ul li:hover:not(:first-child) a {
-  color: #365fa1;
+  color: #b434ae;
 }
 .navigation ul li a .icon {
   position: relative;
@@ -125,15 +125,17 @@ body {
   font-size: 1.75em;
 }
 .navigation ul li a .title {
-position: relative;
-display: block;
-padding: 0 10px;
-height: 60px;
-line-height: 60px;
-text-align: start;
-white-space: nowrap;
+  position: relative;
+  display: block;
+  padding: 0 10px;
+  height: 60px;
+  line-height: 60px;
+  text-align: start;
+  white-space: nowrap;
 }
-
+.navigation.active {
+  width: 300px;
+}
  
 
 
